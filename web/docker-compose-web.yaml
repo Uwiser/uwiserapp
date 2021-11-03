@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  uwiserweb:
+    image: react-criatec:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

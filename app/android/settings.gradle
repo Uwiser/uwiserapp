@@ -1,0 +1,5 @@
+rootProject.name = 'uwiserapp'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+include ':rn-android-overlay-permission'
+project(':rn-android-overlay-permission').projectDir = new File(rootProject.projectDir, '../node_modules/rn-android-overlay-permission/android')
